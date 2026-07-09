@@ -16,9 +16,10 @@ connectDB();
 app.use(cors({
   origin: [
         'http://localhost:3000', 
-        'https://your-future-frontend-domain.com' 
-        'https://online-avnish-verma.netlify.app'
-        'https://online-store.shiftaura.in
+        'https://your-future-frontend-domain.com' ,
+        'https://online-avnish-verma.netlify.app',
+        'https://online-store.shiftaura.in',
+    "https://online-store-frontend-tau.vercel.app"
     ],
   credentials: true
 }));
