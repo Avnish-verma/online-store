@@ -14,7 +14,10 @@ connectDB();
 
 // Global Middlewares Pipeline
 app.use(cors({
-  origin: process.env.FRONTEND_URL || 'http://localhost:3000',
+  origin: [
+        'http://localhost:3000', 
+        'https://your-future-frontend-domain.com' 
+    ],
   credentials: true
 }));
 app.use(express.json());
