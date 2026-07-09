@@ -14,12 +14,14 @@ connectDB();
 
 // Global Middlewares Pipeline
 app.use(cors({
-  origin: [
+    origin: [
         'http://localhost:3000', // Keep this so you can still test locally
         'http://172.28.40.104:3000', // Keep this if you use this specific local IP
         'https://online-store-frontend-tau.vercel.app' // ADD YOUR VERCEL URL HERE
     ],
-  credentials: true
+    credentials: true, // Do not change this; it is required for your admin login
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization']
 }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
