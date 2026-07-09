@@ -15,11 +15,9 @@ connectDB();
 // Global Middlewares Pipeline
 app.use(cors({
   origin: [
-        'http://localhost:3000', 
-        'https://your-future-frontend-domain.com' ,
-        'https://online-avnish-verma.netlify.app',
-        'https://online-store.shiftaura.in',
-    "https://online-store-frontend-tau.vercel.app"
+        'http://localhost:3000', // Keep this so you can still test locally
+        'http://172.28.40.104:3000', // Keep this if you use this specific local IP
+        'https://online-store-frontend-tau.vercel.app' // ADD YOUR VERCEL URL HERE
     ],
   credentials: true
 }));
