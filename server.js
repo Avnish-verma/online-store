@@ -18,6 +18,7 @@ app.use(cors({
         'http://localhost:3000', // Keep this so you can still test locally
         'http://172.28.40.104:3000', // Keep this if you use this specific local IP
         'https://online-store-frontend-tau.vercel.app' // ADD YOUR VERCEL URL HERE
+        "https://online-store-production-d96f.up.railway.app/api/"
     ],
     credentials: true, // Do not change this; it is required for your admin login
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
